@@ -170,7 +170,7 @@ export default function Home() {
           {images.map((clientsImg) => {
             return (
               <div key={clientsImg.image} className="homeClientsCard">
-                <img src={clientsImg.image} alt="" width="250px" />
+                <img src={clientsImg.image} alt="" className="homeClientsImg" />
               </div>
             );
           })}
