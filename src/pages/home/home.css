@@ -333,6 +333,9 @@
   .homeCard {
     width: 350px;
   }
+  .homeClientsImg{
+    width: 170px;
+}
 }
 .blogBg {
   width: 100%;
@@ -375,3 +378,8 @@
 .rec.rec-dot:hover{
   box-shadow: 0 0 1px 3px#0064d0;
 }
+
+.homeClientsImg{
+  width: 250px;
+}
+
