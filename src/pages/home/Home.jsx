@@ -176,18 +176,6 @@ export default function Home() {
           })}
         </Carousel>
       </div>
-      <div className="contador">
-        <div id="sfcb6stpwtlfs6recgpg3smhyyfhzqsn292"></div>
-        <script
-          type="text/javascript"
-          src="https://counter7.stat.ovh/private/counter.js?c=b6stpwtlfs6recgpg3smhyyfhzqsn292&down=async"
-          async
-        ></script>
-          <img
-            alt="contador de visitas"
-            src="http://www.websmultimedia.com/contador-de-visitas.php?id=306700"
-          />
-      </div>
     </div>
   );
 }
