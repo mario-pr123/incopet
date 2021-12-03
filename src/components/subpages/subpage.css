@@ -1,0 +1,40 @@
+.subpageTop {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+}
+.subpageTop .subpageTopItem {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+}
+.subpageTopItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  box-shadow: 0px 1px 25px black;
+}
+.subpageTopItem .subpageTopItemText {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.712);
+  color: white;
+  width: 70%;
+  height: inherit;
+  padding: 2rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  backdrop-filter: blur(3px);
+}
+
+@media screen and (max-width: 970px) {
+  .subpageTopItem .subpageTopItemText {
+    width: 100%;
+  }
+}

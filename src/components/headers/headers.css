@@ -1,0 +1,27 @@
+.headersAll {
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  flex-direction: column;
+}
+.headersAll .headersTitle h1 {
+  font-size: 36px;
+  color: black;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: 1px solid rgba(197, 197, 197, 0.856);
+  text-align: center;
+  margin: 0 25vw 1vw 25vw;
+}
+.headersContent p {
+  text-align: center;
+  padding: 0 27vw;
+}
+@media screen and (max-width: 770px) {
+  .headersContent p {
+    padding: 0 10vw;
+  }
+}

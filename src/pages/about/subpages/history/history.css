@@ -1,0 +1,98 @@
+.historyTimelineWrapper {
+  max-width: 1080px;
+  margin: 50px auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.historyTimelineWrapper .centerLine {
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  box-shadow: 0px 1px 5px black;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+}
+.historyTimelineWrapper .historyTimelineRow {
+  display: flex;
+}
+.historyTimelineWrapper .row-1 {
+  justify-content: flex-start;
+}
+.historyTimelineWrapper .row-2 {
+  justify-content: flex-end;
+}
+
+.historyTimelineWrapper .historyTimelineRow .timelineSection {
+  border-radius: 5px;
+  backdrop-filter: blur(10px);
+  width: calc(50% - 40px);
+  box-shadow: 0px 1px 5px black;
+  padding: 20px;
+}
+.timelineSection .timelineIcon {
+  position: absolute;
+  color: white;
+  text-shadow: 0px 1px 5px black;
+  font-size: 20px;
+}
+.row-1 .timelineSection .timelineIcon {
+  right: -52px;
+}
+.row-1 .timelineSection .historyTimelineDetails {
+  justify-content: flex-end;
+}
+.row-2 .timelineSection .timelineIcon {
+  left: -48px;
+}
+.historyTimelineWrapper
+  .historyTimelineRow
+  .timelineSection
+  .historyTimelineDetails {
+  display: flex;
+}
+
+.historyTimelineDetails .historyDate {
+  font-size: 62px;
+  font-weight: 600;
+  margin-top: -30px;
+  color: #0064d0e1;
+}
+.historyTimelineImg {
+  width: 300px;
+}
+.timelineSection p {
+  text-align: justify;
+  font-weight: 400;
+}
+@media screen and (max-width: 772px) {
+  .historyTimelineWrapper .centerLine {
+    left: 30px;
+  }
+  .historyTimelineWrapper .historyTimelineRow {
+    margin: 30px 0 3px 50px;
+  }
+  .historyTimelineWrapper .historyTimelineRow .timelineSection {
+    width: 100%;
+  }
+  .row-1 .timelineSection::before {
+    left: -7px;
+  }
+  .row-1 .timelineSection .timelineIcon {
+    left: -48px;
+  }
+  .row-1 .timelineSection .historyTimelineDetails {
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 440px) {
+  .historyTimelineWrapper .centerLine,
+  .historyTimelineRow .timelineSection::before,
+  .historyTimelineRow .timelineSection .timelineIcon {
+    display: none;
+  }
+  .historyTimelineWrapper .historyTimelineRow {
+    margin: 10px 0;
+  }
+}

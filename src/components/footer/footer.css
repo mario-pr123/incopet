@@ -1,0 +1,118 @@
+.footer {
+  font-family: "Poppins", sans-serif;
+  background: #0064d0;
+  padding: 40px 0;
+}
+.footer .footerSocial {
+  text-align: center;
+  padding-bottom: 25px;
+  color: white;
+}
+.footer .footerSocial a {
+  font-size: 2rem;
+  color: inherit;
+  line-height: 38px;
+  padding: 10px;
+}
+.footer .footerSocial i {
+  transition: 0.3s ease-in-out;
+}
+.footer .footerSocial i:hover {
+  transform: translateY(-10px);
+}
+.footer ul {
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
+}
+.footer ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+.footer ul li .footerLink {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+.footer .footerCopyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.705);
+}
+.sloganImg {
+  margin-bottom: -10px;
+  position: relative;
+}
+.sloganFooter {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.wordsWrapper{
+    position: absolute;
+    box-sizing: content-box;
+    padding: 50px 30px;
+    display: flex;
+    height: 90px;
+}
+.words{
+    overflow: hidden;
+}
+.sloganFooter span{
+  text-align: right;
+  display: block;
+  padding-right: 20px;
+  color: #ffffff;
+  font-size: 55px;
+  font-weight: 500;
+  animation: spin-words 6s infinite;
+  overflow: hidden;
+}
+@keyframes spin-words {
+    10%{
+        transform: translateY(-112%);
+    }
+    25%{
+        transform: translateY(-100%);
+    }
+    35%{
+        transform: translateY(-212%);
+    }
+    50%{
+        transform: translateY(-200%);
+    }
+    60%{
+        transform: translateY(-312%);
+    }
+    75%{
+        transform: translateY(-300%);
+    }
+    85%{
+        transform: translateY(-412%);
+    }
+    100%{
+        transform: translateY(-400%);
+    }
+}
+@media screen and (max-width: 790px) {
+    .sloganFooter span{
+        text-align: right;
+        display: block;
+        padding-right: 20px;
+        color: #ffffff;
+        font-size: 5vw;
+        font-weight: 500;
+        animation: spin-words 6s infinite;
+        overflow: hidden;
+      }
+}
+@media screen and (max-width: 560px) {
+    .sloganFooter span{
+        display: none;
+      }
+}

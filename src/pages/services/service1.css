@@ -1,0 +1,74 @@
+.serviceWrapper {
+  max-width: 1100px;
+  padding: 0 20px;
+  width: 100%;
+  min-height: 40vh;
+  margin: 5% auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 30px;
+  box-sizing: border-box;
+}
+
+.serviceWrapper .singleService {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  padding: 0 15px;
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0px 1px 5px black;
+  padding: 20px;
+  cursor: pointer;
+}
+.singleService h3 {
+  font-size: 20px;
+  letter-spacing: 1px;
+  transition: 0.7s ease-in-out;
+  text-transform: uppercase;
+}
+.singleService p {
+  font-size: 14px;
+}
+.singleService .socialServiceIcon {
+  width: 70px;
+  height: 70px;
+  background: black;
+  border-radius: 50%;
+  margin: 5% auto;
+  transition: 0.7s ease-in-out;
+}
+.socialServiceIcon i {
+  font-size: 40px;
+  padding: 14px 0;
+  color: white;
+}
+.singleService span {
+  position: absolute;
+  top: 0;
+  left: -130%;
+  width: 100%;
+  height: 100%;
+  background: #0064d0d7;
+  transition: 0.7s ease-in-out;
+  transform: skewX(10deg);
+}
+.singleService:hover span {
+  left: 130%;
+}
+.singleService:hover {
+  transform: scale(1.03);
+}
+.singleService:hover h3 {
+  color: #0064d0d7;
+}
+.singleService:hover .socialServiceIcon {
+  background: #0064d0d7;
+  transform: scale(1.1);
+}

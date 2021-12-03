@@ -1,0 +1,53 @@
+.errorPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    z-index: -20;
+}
+.errorPageWrap{
+    background-image: url(404.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 10;
+}
+.errorPageWrap h1{
+    color: #0064d0;
+    font-weight: 700;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 120px;
+    font-size: 150px;
+    text-align: center;
+}
+.errorPageWrap span{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 70px;
+    text-align: center;
+    font-size: 30px;
+    color: #0064d0;
+}
+@media only screen and (max-width: 520px) and (min-width:200px) {
+    .errorPageWrap h1{
+        font-size: 80px;
+    }
+    .errorPageWrap span{
+        font-size: 25px;
+    }
+    .errorPageWrap{
+        background-size: 100%;
+    }
+}
+@media only screen and (max-width: 767px) and (min-width:521px) {
+    .errorPageWrap h1{
+        font-size: 100px;
+    }
+}

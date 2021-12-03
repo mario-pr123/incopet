@@ -1,0 +1,326 @@
+.nav {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  height: 95px;
+  line-height: 65px;
+  transition: 0.2s ease-in-out;
+}
+.topbarWrapper.scrolled{
+  background: #aaaaaa50;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 2px 25px black;
+  border-radius: 25px;
+  transition:  0.2s ease-in-out;
+  transform: translateY(10px);
+}
+.topbarLogo{
+  transition: 0.3s ease-in-out;
+  transform: translateY(2px);
+}
+.topbarLogo:hover{
+  transform: translateY(10px) scale(1.1);
+}
+.topbarWrapper {
+  transform: translateY(0);
+  position: relative;
+  max-width: 1250px;
+  padding: 0 30px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.2s ease-in-out;
+}
+.topbarWrapper .navLinks {
+  display: inline-flex;
+}
+.navLinks li {
+  list-style: none;
+}
+.topbarLink,
+.desktopItem {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 9px 15px;
+  border-radius: 5px;
+  transition: 0.2s ease-in-out;
+  text-shadow: 0px 0px 5px black;
+}
+.dropMenu .topbarLink:hover{
+  border-radius: 15px;
+}
+.topbarLink:hover,
+.desktopItem:hover {
+  background: #3264c8;
+  border-radius: 10px;
+}
+a{
+  cursor: pointer;
+}
+.dropMenu {
+  background: #242526ef;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  width: 200px;
+  top: 105px;
+  line-height: 45px;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 1px 5px black;
+}
+
+.dropMenu li .topbarLink,
+.dropMenu li .desktopItem {
+  width: 100%;
+  display: block;
+  padding: 0 0 0 15px;
+  font-weight: 400;
+  border-radius: 0px;
+}
+.navLinks li:hover .dropMenu,
+.navLinks li:hover .megaBoxMenu {
+  opacity: 1;
+  visibility: visible;
+  top: 95px;
+}
+.topbarWrapper.scrolled .navLinks li:hover .dropMenu,
+.topbarWrapper.scrolled .navLinks li:hover .megaBoxMenu {
+  opacity: 1;
+  visibility: visible;
+  top: 120px;
+}
+
+.megaBoxMenu {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  padding: 0 30px;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+.megaBoxContent {
+  background: #242526fa;
+  backdrop-filter: blur(5px);
+  padding: 25px 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border-radius: 25px;
+  box-shadow: 0px 1px 15px rgb(0, 0, 0);
+}
+.megaBoxContent.scrolled{
+  transition: 0.2s ease-in-out;
+  backdrop-filter: blur(5px);
+}
+.megaBoxContent .megaBoxRow {
+  width: calc(25% - 40px);
+  line-height: 45px;
+}
+
+.megaBoxContent .megaBoxRow:nth-child(2) {
+  border-left: 0px;
+}
+.megaBoxContent .megaBoxRow img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.megaBoxContent .megaBoxRow header {
+  color: #f2f2f2;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.megaBoxImg {
+  border-radius: 25px;
+}
+.megaBoxContent .megaBoxRow header:hover {
+  transform: scale(1.05) translateX(5px);
+}
+.megaBoxContent .megaBoxRow .megaBoxLinks {
+  margin-left: -40px;
+  border-left: 1px solid rgba(255, 255, 255, 0.096);
+}
+.megaBoxRow .megaBoxLinks li {
+  padding: 0 20px;
+}
+.megaBoxRow .megaBoxLinks li .topbarLink {
+  padding: 0 20px;
+  color: #d9d9d9;
+  font-size: 14px;
+  display: block;
+}
+.navLinks .mobileItem {
+  display: none;
+}
+.topbarWrapper .btn{
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+  text-shadow: 0px 1px 5px black;
+}
+.topbarWrapper .topImg{
+  display: none;
+}
+.topbarWrapper .btn.cancelBtn{
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  transition: 0.2s ease-in-out;
+}
+.btn.cancelBtn:hover{
+  transform: scale(1.45);
+}
+.topbarWrapper .topImg.topImgMob{
+  position: relative;
+  left: 32px;
+  top: 0;
+}
+
+@media screen and (max-width: 970px) {
+  .topbarWrapper .btn{
+    display: block;
+  }
+  .topbarWrapper .topImg{
+    display: block;
+  }
+  .topbarWrapper .navLinks {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 350px;
+    background: #353535;
+    backdrop-filter: blur(15px);
+    display: block;
+    top: 0;
+    left: 0;
+    left: -100%;
+    transition: 0.6s ease-in-out;
+    overflow-y: auto;
+    line-height: 50px;
+    padding: 50px 10px;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.15);
+  }
+  .topbarWrapper.scrolled{
+    transform: translateY(0px);
+  }
+  #menuBtn:checked ~ .navLinks{
+    left: 0%;
+  }
+  #menuBtn:checked ~ .btn.menuBtn{
+    display: none;
+  }
+  .navLinks::-webkit-scrollbar{
+    width: 0px;
+  }
+  .navLinks li {
+    margin: 15px 10px;
+  }
+  .navLinks li .topbarLink {
+    padding: 0 20px;
+    display: block;
+    font-size: 20px;
+  }
+  .navLinks .dropMenu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    top: 65px;
+    width: 100%;
+    max-height: 0px;
+    overflow: hidden;
+  }
+  #showDrop:checked ~ .dropMenu,
+  #showMega:checked ~ .megaBoxMenu{
+    max-height: 100%;
+    padding: 5px 10px;
+  }
+  .navLinks .dropMenu li {
+    margin: 0;
+  }
+  .navLinks .dropMenu li .topbarLink,
+  .desktopItem {
+    font-size: 18px;
+    border-radius: 5px;
+  }
+  .navLinks .mobileItem {
+    display: block;
+    margin: 0;
+    font-size: 20px;
+    color: #f2f2f2;
+    font-weight: 500;
+    padding-left: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    text-shadow: 0px 1px 5px black;
+  }
+  .navLinks .mobileItem:nth-child(1){
+    padding-left: 0px;
+  }
+  .navLinks .mobileItem:hover {
+    background: #3264c8;
+  }
+  .megaBoxMenu {
+    position: static;
+    top: 65px;
+    padding: 0px 10px;
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+    max-height: 0px;
+    overflow: hidden;
+  }
+  .megaBoxContent {
+    background: #2425269f;
+    flex-direction: column;
+    padding: 20px 20px 0 20px;
+    box-shadow: 0px 1px 5px black;
+  }
+  .megaBoxContent .megaBoxRow {
+    width: 100%;
+    margin-bottom: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.068);
+  }
+  .megaBoxContent .megaBoxRow:nth-child(1),
+  .megaBoxContent .megaBoxRow:nth-child(2) {
+    border-top: 0px;
+  }
+  .megaBoxContent .megaBoxRow .megaBoxLinks {
+    border-left: 0px;
+    padding-left: 15px;
+  }
+  .megaBoxContent .megaBoxRow .megaBoxLinks li {
+    margin: 0;
+  }
+  .megaBoxContent .megaBoxRow header {
+    font-size: 19px;
+  }
+  .megaBoxImg {
+    border-radius: 0px;
+  }
+  .navLinks .desktopItem {
+    display: none;
+  }
+  .btn.menuBtn{
+    font-size: 40px;
+    border-radius: 100px;
+    transition: 0.2s ease-in-out;
+    color: black;
+  }
+  .btn.menuBtn:hover{
+    transform: scale(1.25);
+  }
+}
+.topbarWrapper input {
+  display: none;
+}

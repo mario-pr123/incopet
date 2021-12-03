@@ -1,0 +1,57 @@
+.toolsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  min-height: 120vh;
+}
+.toolsContainer .toolsBox {
+  position: relative;
+  width: 350px;
+  margin: 15px;
+  padding: 40px;
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.178);
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  min-height: 21rem;
+}
+.toolsBox .toolsIcon {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  box-shadow: 0 0 0 0 #0064d0;
+  background: #0064d0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(70px);
+  margin: 0 auto;
+  border-radius: 50%;
+  font-size: 40px;
+  color: white;
+  font-weight: 700;
+  transition: 1s;
+}
+.toolsBox:hover .toolsIcon {
+  box-shadow: 0 0 0 400px #0064d0;
+  transform: translateY(0px);
+}
+.toolsBox .toolsContent {
+  position: relative;
+  z-index: 1;
+  transition: 0.7s;
+}
+.toolsBox:hover .toolsContent {
+  color: white;
+  opacity: 1;
+}
+.toolsBox .toolsContent {
+  font-size: 17px;
+  margin: 10px 0;
+  padding: 0;
+  opacity: 0;
+}

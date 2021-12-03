@@ -1,0 +1,58 @@
+.mvContainer {
+  display: flex;
+  justify-content: center;
+  min-height: 60vh;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.mvContainer .mvCard {
+  border-radius: 1rem;
+  box-shadow: 0 1px 5px black;
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem;
+  overflow: hidden;
+  width: 18rem;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.06);
+  border: 0.1rem solid rgba(255, 255, 255, 0.18);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.mvCard:hover {
+  transform: scale(1.1);
+}
+.mvCard .mvTopCard {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  transition: 0.3s ease-in-out;
+}
+
+.mvCard:hover .mvContent h2 {
+  color: #0064d0e1;
+}
+.mvCard .mvContent {
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.3s ease-in-out;
+}
+.mvContent p {
+  font-size: 0.9rem;
+  text-align: center;
+}
+@media screen and (max-width: 772px) {
+  .mvContainer {
+    flex-direction: column;
+  }
+  .mvCard {
+    width: 100%;
+  }
+}
