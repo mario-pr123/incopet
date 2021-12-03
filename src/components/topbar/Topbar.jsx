@@ -166,7 +166,7 @@ export default function Topbar() {
             </Link>
           </li>
           <li>
-            <a href="http://localhost:3000/" className="topbarLink" to="/blog">
+            <a href="https://incopet-blog.vercel.app/" className="topbarLink" to="/blog">
               Blog
             </a>
           </li>
