@@ -146,6 +146,7 @@
   flex-wrap: wrap;
   z-index: 1;
   font-family: "Poppins", serif;
+  width: 100%;
 }
 .homeCard {
   position: relative;
