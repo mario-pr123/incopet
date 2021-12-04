@@ -36,5 +36,6 @@
 @media screen and (max-width: 970px) {
   .subpageTopItem .subpageTopItemText {
     width: 100%;
+    font-size: 20px;
   }
 }

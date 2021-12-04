@@ -154,7 +154,7 @@
   position: relative;
   width: 380px;
   height: 460px;
-  margin: 30px;
+  margin-bottom: 30px;
   overflow: hidden;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
@@ -332,6 +332,9 @@
 @media screen and (max-width: 550px) {
   .homeCard {
     width: 350px;
+  }
+  .rec.rec-arrow{
+    display: none;
   }
 }
 .blogBg {

@@ -7,7 +7,7 @@ export default function Subpage(props) {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <div data-aos="zoom-out"className="subpageTop">
+    <div className="subpageTop">
       <div className="subpageTopItem">
         <img src={props.image} alt="" />
         <div className="subpageTopItemText">
