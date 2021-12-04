@@ -382,10 +382,13 @@
 }
 @media screen and (max-width: 550px) {
   .slideShowItemText {
+    width: 100%;
+    left: 0;
     background: rgba(0, 0, 0, 0);
-    backdrop-filter: blur(0px);
+    backdrop-filter: blur(1px);
   }
   .slideShowItemText h1{
     text-align: center;
+    font-size: 55px;
   }
 }
