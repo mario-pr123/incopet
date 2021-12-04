@@ -333,9 +333,9 @@
   .homeCard {
     width: 350px;
   }
-  .homeClientsImg{
-    width: 170px;
-}
+  .rec.rec-arrow {
+    display: none;
+  }
 }
 .blogBg {
   width: 100%;
