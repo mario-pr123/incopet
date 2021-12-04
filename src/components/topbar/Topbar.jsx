@@ -20,10 +20,10 @@ export default function Topbar() {
         <input type="radio" name="topSlide" id="menuBtn" />
         <input type="radio" name="topSlide" id="cancelBtn" />
         <ul className="navLinks">
-          <img className="topImg topImgMob" src="/img/topImg2.png" width="170px" alt=""></img>
           <label htmlFor="cancelBtn" className="btn cancelBtn">
             <i className="fas fa-times"></i>
           </label>
+          <img className="topImg topImgMob" src="/img/topImg2.png" width="170px" alt=""></img>
           <li>
             <Link className="topbarLink" to="/">
               Inicio
