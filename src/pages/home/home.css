@@ -331,7 +331,7 @@
 }
 @media screen and (max-width: 550px) {
   .homeCard {
-    width: 350px;
+    width: 330px;
   }
   .rec.rec-arrow {
     display: none;
