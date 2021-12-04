@@ -380,4 +380,12 @@
 .homeClientsImg{
   width: 250px;
 }
-
+@media screen and (max-width: 550px) {
+  .slideShowItemText {
+    background: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(0px);
+  }
+  .slideShowItemText h1{
+    text-align: center;
+  }
+}
