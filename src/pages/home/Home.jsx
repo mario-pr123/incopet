@@ -108,7 +108,7 @@ export default function Home() {
               <div className="homeButtons">
                 <a
                   className="homeCardButton"
-                  href="http://localhost:3000/"
+                  href="https://incopet-blog.vercel.app/"
                   primary="true"
                 >
                   Nuestro Blog
