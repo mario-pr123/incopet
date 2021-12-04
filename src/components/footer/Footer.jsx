@@ -65,9 +65,9 @@ export default function Footer() {
             </Link>
           </li>
           <li>
-            <Link className="footerLink" to="/blog">
+            <a className="footerLink" href="https://incopet-blog.vercel.app/">
               Blog
-            </Link>
+            </a>
           </li>
         </ul>
         <p className="footerCopyright">
