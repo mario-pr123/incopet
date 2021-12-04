@@ -172,13 +172,11 @@ a{
   display: none;
 }
 .topbarWrapper .btn.cancelBtn{
-  position: absolute;
-  right: 30px;
-  top: 10px;
+  position: sticky;
+  top: 0;
+  padding-left: 320px;
+  z-index: 200;
   transition: 0.2s ease-in-out;
-}
-.btn.cancelBtn:hover{
-  transform: scale(1.45);
 }
 .topbarWrapper .topImg.topImgMob{
   position: relative;
