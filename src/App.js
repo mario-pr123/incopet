@@ -9,7 +9,6 @@ import {
 import Topbar from "./components/topbar/Topbar";
 import Contact from "./pages/contact/Contact";
 import About from "./pages/about/About";
-import Products from "./pages/products/Products";
 import Services from "./pages/services/Services";
 import Herramientas from "./pages/herramientas/Herramientas";
 import History from "./pages/about/subpages/history/History";
@@ -20,7 +19,6 @@ import Footer from "./components/footer/Footer";
 import Service1 from "./pages/services/subpages/Service1";
 import Service2 from "./pages/services/subpages/Service2";
 import Service3 from "./pages/services/subpages/Service3";
-import Service4 from "./pages/services/subpages/Service4";
 import 'aos/dist/aos.css';
 import PageNotFound from "./pages/notFound/PageNotFound";
 
@@ -52,23 +50,17 @@ function App() {
           <Route path="/contacto">
             <Contact />
           </Route>
-          <Route path="/productos">
-            <Products />
-          </Route>
           <Route path="/servicios">
             <Services />
           </Route>
-          <Route path="/ingenieria-petrolera">
+          <Route path="/desarrollo-productos-quimicos">
             <Service1 />
           </Route>
-          <Route path="/ejecucion-tratamientos">
+          <Route path="/diseno-ejecucion-tratamientos">
             <Service2 />
           </Route>
-          <Route path="/equipos-bombeo">
+          <Route path="/provision-equipos-cementacion">
             <Service3 />
-          </Route>
-          <Route path="/coiled-tubing">
-            <Service4 />
           </Route>
           <Route path="/herramientas">
             <Herramientas />
@@ -79,7 +71,7 @@ function App() {
           <Route path="/herramientas-pesca">
             <Tools2 />
           </Route>
-          <Route component={PageNotFound}/>
+          <Route component={PageNotFound} />
         </Switch>
         <Footer></Footer>
       </Router>

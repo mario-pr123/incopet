@@ -138,7 +138,7 @@
 /* --------------------------- */
 .homeFeatures,
 .homeFeaturesTitle {
-  min-height: 80vh;
+  min-height: 57vh;
   position: relative;
   display: flex;
   justify-content: center;
@@ -341,7 +341,7 @@
   position: fixed;
   z-index: -100;
   object-fit: cover;
-  opacity: 0.2;
+  opacity: 0.5;
 }
 @media screen and (max-width: 970px) {
   .blogBg {
@@ -357,27 +357,28 @@
   cursor: pointer;
   animation: bounce 0.5s alternate infinite ease-in;
 }
-.contador{
+.contador {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.rec-carousel{
-  padding: 30px;
+.rec.rec-carousel {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .rec.rec-arrow:focus:enabled,
-.rec.rec-arrow:hover:enabled{
+.rec.rec-arrow:hover:enabled {
   background-color: #0064d0;
 }
-.rec.rec-dot.rec-dot_active{
+.rec.rec-dot.rec-dot_active {
   box-shadow: 0 0 1px 3px#0064d0;
   background-color: #0065d071;
 }
-.rec.rec-dot:hover{
+.rec.rec-dot:hover {
   box-shadow: 0 0 1px 3px#0064d0;
 }
 
-.homeClientsImg{
+.homeClientsImg {
   width: 250px;
 }
 @media screen and (max-width: 550px) {
@@ -387,7 +388,7 @@
     background: rgba(0, 0, 0, 0);
     backdrop-filter: blur(1px);
   }
-  .slideShowItemText h1{
+  .slideShowItemText h1 {
     text-align: center;
     font-size: 55px;
   }
