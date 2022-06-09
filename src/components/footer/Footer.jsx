@@ -71,7 +71,7 @@ export default function Footer() {
           </li>
         </ul>
         <p className="footerCopyright">
-          <small>© 2021 | Web Design MP | All Rights Reserved</small>
+          <small>© 2022 | Web Design MP | All Rights Reserved</small>
         </p>
       </div>
     </div>
