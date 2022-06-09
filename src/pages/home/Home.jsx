@@ -162,18 +162,10 @@ export default function Home() {
               <div className="homeButtons">
                 <Button
                   className="homeCardButton"
-                  to="/productos"
-                  primary="true"
-                >
-                  Nuestros Productos
-                </Button>
-                <br />
-                <Button
-                  className="homeCardButton"
                   to="/servicios"
                   primary="true"
                 >
-                  Nuestros Servicios
+                  Nuestros Productos y Servicios
                 </Button>
               </div>
             </div>
