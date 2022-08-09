@@ -20,10 +20,10 @@ export default function Topbar() {
         <input type="radio" name="topSlide" id="menuBtn" />
         <input type="radio" name="topSlide" id="cancelBtn" />
         <ul className="navLinks">
-          <img className="topImg topImgMob" src="/img/topImg2.png" width="170px" alt=""></img>
           <label htmlFor="cancelBtn" className="btn cancelBtn">
             <i className="fas fa-times"></i>
           </label>
+          <img className="topImg topImgMob" src="/img/topImg2.png" width="170px" alt=""></img>
           <li>
             <Link className="topbarLink" to="/">
               Inicio
@@ -78,60 +78,27 @@ export default function Topbar() {
                 <div className="megaBoxRow">
                   <img className="megaBoxImg" src="/img/engineer.png" alt="" />
                 </div>
-                <div className="megaBoxRow">
-                  <header>
-                    <Link className="link" to="/productos">
-                      Productos
-                    </Link>
-                  </header>
-                  <ul className="megaBoxLinks">
-                    <li>
-                      <Link className="topbarLink" to="/">
-                        Producto 1
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="topbarLink" to="/">
-                        Producto 2
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="topbarLink" to="/">
-                        Producto 3
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="topbarLink" to="/">
-                        Producto 4
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
+                
                 <div className="megaBoxRow">
                   <header>
                     <Link className="link" to="/servicios">
-                      Servicios
+                      Productos y Servicios
                     </Link>
                   </header>
                   <ul className="megaBoxLinks">
                     <li>
-                      <Link className="topbarLink" to="/ingenieria-petrolera">
-                       Ingeniería Petrolera
+                      <Link className="topbarLink" to="/desarrollo-productos-quimicos">
+                       Desarrollo de Químicos
                       </Link>
                     </li>
                     <li>
-                      <Link className="topbarLink" to="/ejecucion-tratamientos">
-                        Ejecución de tratamientos
+                      <Link className="topbarLink" to="/provision-equipos-cementacion">
+                        Provisión de Equipos para Cementación
                       </Link>
                     </li>
                     <li>
-                      <Link className="topbarLink" to="/coiled-tubing">
-                        Coiled Tubing
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="topbarLink" to="/equipos-bombeo">
-                        Equipos para bombeo
+                      <Link className="topbarLink" to="/diseno-ejecucion-tratamientos">
+                      Diseño y Ejecución de Tratamientos
                       </Link>
                     </li>
                     
@@ -166,7 +133,7 @@ export default function Topbar() {
             </Link>
           </li>
           <li>
-            <a href="http://localhost:3000/" className="topbarLink" to="/blog">
+            <a href="https://incopet-blog.vercel.app/" className="topbarLink" to="/blog">
               Blog
             </a>
           </li>

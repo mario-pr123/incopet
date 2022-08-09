@@ -9,7 +9,7 @@ export default function Headers(props) {
   return (
     <div data-aos="fade-up"className="headersAll">
       <div className="headersTitle">
-        <h1>{props.title}</h1>
+        <h2>{props.title}</h2>
       </div>
       <div className="headersContent">
         <p>{props.paragraph}</p>

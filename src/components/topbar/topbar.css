@@ -6,19 +6,19 @@
   line-height: 65px;
   transition: 0.2s ease-in-out;
 }
-.topbarWrapper.scrolled{
+.topbarWrapper.scrolled {
   background: #aaaaaa50;
   backdrop-filter: blur(15px);
   box-shadow: 0 2px 25px black;
   border-radius: 25px;
-  transition:  0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
   transform: translateY(10px);
 }
-.topbarLogo{
+.topbarLogo {
   transition: 0.3s ease-in-out;
   transform: translateY(2px);
 }
-.topbarLogo:hover{
+.topbarLogo:hover {
   transform: translateY(10px) scale(1.1);
 }
 .topbarWrapper {
@@ -49,7 +49,7 @@
   transition: 0.2s ease-in-out;
   text-shadow: 0px 0px 5px black;
 }
-.dropMenu .topbarLink:hover{
+.dropMenu .topbarLink:hover {
   border-radius: 15px;
 }
 .topbarLink:hover,
@@ -57,7 +57,7 @@
   background: #3264c8;
   border-radius: 10px;
 }
-a{
+a {
   cursor: pointer;
 }
 .dropMenu {
@@ -99,7 +99,7 @@ a{
   position: absolute;
   top: 100px;
   left: 0;
-  padding: 0 30px;
+  padding: 0 160px;
   width: 100%;
   opacity: 0;
   visibility: hidden;
@@ -115,13 +115,13 @@ a{
   border-radius: 25px;
   box-shadow: 0px 1px 15px rgb(0, 0, 0);
 }
-.megaBoxContent.scrolled{
+.megaBoxContent.scrolled {
   transition: 0.2s ease-in-out;
   backdrop-filter: blur(5px);
 }
 .megaBoxContent .megaBoxRow {
-  width: calc(25% - 40px);
-  line-height: 45px;
+  width: 30%;
+  line-height: 40px;
 }
 
 .megaBoxContent .megaBoxRow:nth-child(2) {
@@ -161,36 +161,34 @@ a{
 .navLinks .mobileItem {
   display: none;
 }
-.topbarWrapper .btn{
+.topbarWrapper .btn {
   color: #fff;
   font-size: 20px;
   cursor: pointer;
   display: none;
   text-shadow: 0px 1px 5px black;
 }
-.topbarWrapper .topImg{
+.topbarWrapper .topImg {
   display: none;
 }
-.topbarWrapper .btn.cancelBtn{
-  position: absolute;
-  right: 30px;
-  top: 10px;
+.topbarWrapper .btn.cancelBtn {
+  position: sticky;
+  top: 0;
+  padding-left: 320px;
+  z-index: 200;
   transition: 0.2s ease-in-out;
 }
-.btn.cancelBtn:hover{
-  transform: scale(1.45);
-}
-.topbarWrapper .topImg.topImgMob{
+.topbarWrapper .topImg.topImgMob {
   position: relative;
   left: 32px;
   top: 0;
 }
 
 @media screen and (max-width: 970px) {
-  .topbarWrapper .btn{
+  .topbarWrapper .btn {
     display: block;
   }
-  .topbarWrapper .topImg{
+  .topbarWrapper .topImg {
     display: block;
   }
   .topbarWrapper .navLinks {
@@ -210,16 +208,16 @@ a{
     padding: 50px 10px;
     box-shadow: 0 15px 15px rgba(0, 0, 0, 0.15);
   }
-  .topbarWrapper.scrolled{
+  .topbarWrapper.scrolled {
     transform: translateY(0px);
   }
-  #menuBtn:checked ~ .navLinks{
+  #menuBtn:checked ~ .navLinks {
     left: 0%;
   }
-  #menuBtn:checked ~ .btn.menuBtn{
+  #menuBtn:checked ~ .btn.menuBtn {
     display: none;
   }
-  .navLinks::-webkit-scrollbar{
+  .navLinks::-webkit-scrollbar {
     width: 0px;
   }
   .navLinks li {
@@ -240,7 +238,7 @@ a{
     overflow: hidden;
   }
   #showDrop:checked ~ .dropMenu,
-  #showMega:checked ~ .megaBoxMenu{
+  #showMega:checked ~ .megaBoxMenu {
     max-height: 100%;
     padding: 5px 10px;
   }
@@ -264,7 +262,7 @@ a{
     transition: all 0.3s ease-in-out;
     text-shadow: 0px 1px 5px black;
   }
-  .navLinks .mobileItem:nth-child(1){
+  .navLinks .mobileItem:nth-child(1) {
     padding-left: 0px;
   }
   .navLinks .mobileItem:hover {
@@ -311,13 +309,13 @@ a{
   .navLinks .desktopItem {
     display: none;
   }
-  .btn.menuBtn{
+  .btn.menuBtn {
     font-size: 40px;
     border-radius: 100px;
     transition: 0.2s ease-in-out;
-    color: black;
+    color: white;
   }
-  .btn.menuBtn:hover{
+  .btn.menuBtn:hover {
     transform: scale(1.25);
   }
 }

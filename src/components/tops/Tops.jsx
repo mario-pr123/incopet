@@ -10,7 +10,7 @@ export default function Tops(props) {
     window.scrollTo({ top: 750, behavior: "smooth" });
   };
   return (
-    <div className="topAll">
+    <div data-aos="zoom-out" className="topAll">
       <img src={props.image} alt="" />
       <div className="textTop">
         <h1>{props.title}</h1>

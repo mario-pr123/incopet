@@ -122,8 +122,8 @@
   margin-bottom: 50px;
 }
 .homeClients h2 {
-  font-family: "Poppins", sans-serif;
   margin-top: 30px;
+  text-align: center;
   margin-bottom: 70px;
   font-size: 35px;
   padding: 10px;
@@ -138,7 +138,7 @@
 /* --------------------------- */
 .homeFeatures,
 .homeFeaturesTitle {
-  min-height: 80vh;
+  min-height: 57vh;
   position: relative;
   display: flex;
   justify-content: center;
@@ -146,15 +146,13 @@
   flex-wrap: wrap;
   z-index: 1;
   font-family: "Poppins", serif;
-}
-.homeFeaturesTitle {
-  padding: 50px;
+  width: 100%;
 }
 .homeCard {
   position: relative;
   width: 380px;
   height: 460px;
-  margin-bottom: 30px;
+  margin: 30px;
   overflow: hidden;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
@@ -331,9 +329,9 @@
 }
 @media screen and (max-width: 550px) {
   .homeCard {
-    width: 350px;
+    width: 330px;
   }
-  .rec.rec-arrow{
+  .rec.rec-arrow {
     display: none;
   }
 }
@@ -343,7 +341,7 @@
   position: fixed;
   z-index: -100;
   object-fit: cover;
-  opacity: 0.2;
+  opacity: 0.5;
 }
 @media screen and (max-width: 970px) {
   .blogBg {
@@ -359,22 +357,39 @@
   cursor: pointer;
   animation: bounce 0.5s alternate infinite ease-in;
 }
-.contador{
+.contador {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.rec-carousel{
-  padding: 30px;
+.rec.rec-carousel {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .rec.rec-arrow:focus:enabled,
-.rec.rec-arrow:hover:enabled{
+.rec.rec-arrow:hover:enabled {
   background-color: #0064d0;
 }
-.rec.rec-dot.rec-dot_active{
+.rec.rec-dot.rec-dot_active {
   box-shadow: 0 0 1px 3px#0064d0;
   background-color: #0065d071;
 }
-.rec.rec-dot:hover{
+.rec.rec-dot:hover {
   box-shadow: 0 0 1px 3px#0064d0;
+}
+
+.homeClientsImg {
+  width: 250px;
+}
+@media screen and (max-width: 550px) {
+  .slideShowItemText {
+    width: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(1px);
+  }
+  .slideShowItemText h1 {
+    text-align: center;
+    font-size: 55px;
+  }
 }

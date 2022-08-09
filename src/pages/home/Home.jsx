@@ -34,6 +34,9 @@ export default function Home() {
     { image: "/img/clients/petroec.png" },
     { image: "/img/clients/repsol.png" },
     { image: "/img/clients/hallib.png" },
+    { image: "/img/clients/belos.png" },
+    { image: "/img/clients/cnel.png" },
+    { image: "/img/clients/drill.png" },
     { image: "/img/clients/pluspetrol.png" },
     { image: "/img/clients/dyn.png" },
     { image: "/img/clients/CNPC.png" },
@@ -93,12 +96,15 @@ export default function Home() {
         </div>
       </div>
       <div className="homeFeaturesTitle" data-aos="fade-up">
-        <div className="homeFeaturesContent">
-          <h2>¿QUIÉNES SOMOS?</h2>
-        </div>
+        <Headers title="¿QUIÉNES SOMOS?" />
         <div className="homeFeatures" data-aos="fade-up">
           <div className="homeCard">
-            <img className="homeCardImg" src="/img/blogC.png" width="710px" alt="" />
+            <img
+              className="homeCardImg"
+              src="/img/blogC.png"
+              width="710px"
+              alt=""
+            />
             <div className="homeCardContent">
               <i className="homeIcon">
                 <ImNewspaper />
@@ -108,7 +114,7 @@ export default function Home() {
               <div className="homeButtons">
                 <a
                   className="homeCardButton"
-                  href="http://localhost:3000/"
+                  href="https://incopet-blog.vercel.app/"
                   primary="true"
                 >
                   Nuestro Blog
@@ -117,7 +123,12 @@ export default function Home() {
             </div>
           </div>
           <div className="homeCard">
-            <img className="homeCardImg" src="/img/team.jpg" width="400px" alt="" />
+            <img
+              className="homeCardImg"
+              src="/img/team.jpg"
+              width="400px"
+              alt=""
+            />
             <div className="homeCardContent">
               <i className="homeIcon">
                 <AiOutlineTeam />
@@ -136,7 +147,12 @@ export default function Home() {
             </div>
           </div>
           <div className="homeCard">
-            <img className="homeCardImgE" src="/img/engineer.png" width="670px" alt="" />
+            <img
+              className="homeCardImgE"
+              src="/img/engineer.png"
+              width="670px"
+              alt=""
+            />
             <div className="homeCardContent">
               <i className="homeIcon">
                 <GiChemicalDrop />
@@ -146,26 +162,19 @@ export default function Home() {
               <div className="homeButtons">
                 <Button
                   className="homeCardButton"
-                  to="/productos"
-                  primary="true"
-                >
-                  Nuestros Productos
-                </Button>
-                <br />
-                <Button
-                  className="homeCardButton"
                   to="/servicios"
                   primary="true"
                 >
-                  Nuestros Servicios
+                  Nuestros Productos y Servicios
                 </Button>
+                
               </div>
             </div>
           </div>
         </div>
       </div>
       <div data-aos="fade-up" className="homeClients">
-        <h2>NUESTROS CLIENTES</h2>
+        <Headers title="NUESTROS CLIENTES" />
         <Carousel breakPoints={breakPoints}>
           {images.map((clientsImg) => {
             return (

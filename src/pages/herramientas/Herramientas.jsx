@@ -20,14 +20,13 @@ export default function Herramientas() {
         <title>INCOPET S.A. | Herramientas</title>
         <meta
           name="description"
-          content="INCOPET S.A cuenta con herramientas de completacion y herramientas de pesca. Alta confiabilidad en equipos y herramientas."
+          content="INCOPET S.A cuenta con herramientas de completacion y herramientas de pesca. Alta confiabilidad en equipos y herramientas. Diseño y provisión de equipos para completación de pozos en hoyo abierto y hoyo entubado con los más altos estándares de la industria. Asesoría y disponibilidad de herramientas para operaciones de pesca."
         />
       </Helmet>
       <Tops image="/img/her.jpg" title="HERRAMIENTAS" paragraph="" />
       <Headers
         title="NUESTRAS HERRAMIENTAS"
-        paragraph="
-        Alta confiabilidad en Equipos y Herramientas"
+        paragraph="Diseño y provisión de equipos para completación de pozos en hoyo abierto y hoyo entubado con los más altos estándares de la industria. Asesoría y disponibilidad de herramientas para operaciones de pesca."
       />
       <div data-aos="fade-up" className="herFeatures">
         <div className="herFeaturesRow">
