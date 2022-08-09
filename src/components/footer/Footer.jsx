@@ -44,7 +44,7 @@ export default function Footer() {
           >
             <i className="fab fa-linkedin-in"></i>
           </a>
-          <a href="https://wa.link/158k5b" target="_blank" rel="noreferrer">
+          <a href="https://wa.link/yj62m3" target="_blank" rel="noreferrer">
             <i className="fab fa-whatsapp"></i>
           </a>
         </div>
@@ -71,7 +71,7 @@ export default function Footer() {
           </li>
         </ul>
         <p className="footerCopyright">
-          <small>© 2021 | Web Design MP | All Rights Reserved</small>
+          <small>© 2022 | Web Design MP | All Rights Reserved</small>
         </p>
       </div>
     </div>

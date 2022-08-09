@@ -165,9 +165,8 @@ export default function Home() {
                   to="/servicios"
                   primary="true"
                 >
-                  Nuestros Productos y Servicios
+                  Productos y Servicios
                 </Button>
-                
               </div>
             </div>
           </div>

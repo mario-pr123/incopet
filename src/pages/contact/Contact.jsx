@@ -203,7 +203,7 @@ export default function Contact() {
               >
                 <i className="fab fa-linkedin-in"></i>
               </a>
-              <a href="https://wa.link/158k5b" target="_blank" rel="noreferrer">
+              <a href="https://wa.link/yj62m3" target="_blank" rel="noreferrer">
                 <i className="fab fa-whatsapp"></i>
               </a>
             </div>
