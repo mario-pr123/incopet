@@ -30,7 +30,7 @@ export default function Policy() {
         title="NUESTRA POLÍTICA INTEGRADA"
         paragraph="
         Política integrada de gestión de la calidad, salud, 
-        seguridad, medio ambiente y antisoborno"
+        seguridad, medio ambiente y antisoborno."
       />
       <div className="policyFeatures">
         <div className="policySection">
