@@ -136,7 +136,7 @@ export default function Contact() {
                 <div className="contactInfoText">
                   <h4>Correo Denuncias</h4>
                   <p>
-                    <a href="mailto:info@incopet.com">correodenuncias@incopet.com</a>
+                    <a href="mailto:info@incopet.com">denuncias@incopet.com</a>
                   </p>
                 </div>
               </div>
