@@ -129,6 +129,18 @@ export default function Contact() {
                 <p>(+593)-9-97491360</p>
               </div>
             </div>
+            <div className="contactInfoBox">
+                <div className="contactIcon">
+                    <i className="fa-solid fa-triangle-exclamation"></i>
+                </div>
+                <div className="contactInfoText">
+                  <h4>Correo Denuncias</h4>
+                  <p>
+                    <a href="mailto:info@incopet.com">correodenuncias@incopet.com</a>
+                  </p>
+                </div>
+              </div>
+            
           </div>
           <div className="contactForm">
             <form ref={form} onSubmit={sendEmail}>
@@ -209,19 +221,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <div className="contactExtraBox">
-          <div className="contactExtraIcon">
-            <i className="fas fa-mail-bulk"></i>
-          </div>
-          <div className="contactExtraContent">
-            <h3>Correo de Denuncias</h3>
-            <div className="contactDenuncias">
-              <a href="mailto:correodenuncias@incopet.com">
-                correodenuncias@incopet.com
-              </a>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </div>
   );
