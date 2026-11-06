@@ -1,6 +1,6 @@
 import Home from "./pages/home/Home";
-import Tools1 from "./pages/herramientas/subpages/Tools1"
-import Tools2 from "./pages/herramientas/subpages/Tools2"
+import Tools1 from "./pages/herramientas/subpages/Tools1";
+import Tools2 from "./pages/herramientas/subpages/Tools2";
 import {
   BrowserRouter as Router,
   Switch,
@@ -19,6 +19,7 @@ import Footer from "./components/footer/Footer";
 import Service1 from "./pages/services/subpages/Service1";
 import Service2 from "./pages/services/subpages/Service2";
 import Service3 from "./pages/services/subpages/Service3";
+import CookieBanner from "./components/cookiebanner/cookieBanner";
 import 'aos/dist/aos.css';
 import PageNotFound from "./pages/notFound/PageNotFound";
 
@@ -74,9 +75,10 @@ function App() {
           <Route component={PageNotFound} />
         </Switch>
         <Footer></Footer>
+        <CookieBanner />
       </Router>
-
     </>
   );
 }
+
 export default App;
